@@ -8,13 +8,16 @@
 
 <p align="center">
   <a href="https://zaujulio.github.io">
-    <img src="https://img.shields.io/badge/Portfolio-Visit%20Site-249E94?style=for-the-badge&logo=react&logoColor=white" alt="Portfolio" />
+    <img src="https://img.shields.io/badge/Portfolio-249E94?style=for-the-badge&logo=react&logoColor=white" alt="Portfolio" />
   </a>
   <a href="https://linkedin.com/in/zaujulio">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
   <a href="mailto:zaujulio.dev@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  </a>
+  <a href="https://profile.codersrank.io/user/zaujulio" target="_blank">
+    <img src="https://img.shields.io/badge/CodersRank-67A4AC?style=for-the-badge&logo=codersrank&logoColor=white" alt="CodersRank" />
   </a>
 </p>
 
