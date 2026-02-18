@@ -22,7 +22,7 @@
 
 ### 🚀 About Me
 
-I'm a Software Engineer passionate about building scalable applications and exploring the intersection of **Web Development**, **Machine Learning**, and **Cloud Infrastructure**. Currently focused on React, TypeScript, and Python ecosystems.
+I'm a Software Engineer passionate about building scalable applications and exploring the intersection of **Web Development**, **Machine Learning**, and **Cloud Infrastructure**. Currently focused on **GraphQL**, **C#/.NET**, **TypeScript**, and **Python** ecosystems.
 
 - 🔭 I’m currently working on my personal portfolio and some secret side projects.
 - 🌱 I’m learning more about Advanced ML patterns and Cloud Native architectures.
@@ -32,13 +32,15 @@ I'm a Software Engineer passionate about building scalable applications and expl
 
 <p align="left">
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TS" />
-  <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React" />
+  <img src="https://img.shields.io/badge/GraphQL-E10098?style=flat-square&logo=graphql&logoColor=white" alt="GraphQL" />
+  <img src="https://img.shields.io/badge/C%23-239120?style=flat-square&logo=c-sharp&logoColor=white" alt="C#" />
+  <img src="https://img.shields.io/badge/.NET-512BD4?style=flat-square&logo=dotnet&logoColor=white" alt=".NET" />
   <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next" />
   <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwind-css&logoColor=white" alt="Tailwind" />
   <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node" />
   <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
   <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="Postgres" />
+  <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" alt="MongoDB" />
 </p>
 
 ---
