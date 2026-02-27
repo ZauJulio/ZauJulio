@@ -34,3 +34,22 @@ jobs:
           git commit -m "build(resume): update resume.pdf - [Skip GitHub Action]"
           git pull --rebase origin main
           git push
+
+      - name: Sync to Portfolio
+        if: github.event_name == 'push'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+          # Checkout portfolio repo
+          git clone https://x-access-token:${{ secrets.PORTFOLIO_DEPLOY_TOKEN }}@github.com/ZauJulio/zaujulio.github.io.git ../portfolio
+          
+          # Copy resume to portfolio public folder
+          cp resume/resume.pdf ../portfolio/apps/web/public/resume.pdf
+          
+          # Commit and push to portfolio
+          cd ../portfolio
+          git add apps/web/public/resume.pdf
+          git diff --staged --quiet && echo "No changes to commit" && exit 0
+          git commit -m "sync(resume): update resume.pdf"
+          git push
