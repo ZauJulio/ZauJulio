@@ -23,7 +23,6 @@ jobs:
           user: zaujulio
           template: classic
           base: ""
-          debug: yes
           
           config_display: large
           config_timezone: America/Sao_Paulo
