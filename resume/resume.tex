@@ -1,83 +1,162 @@
 \documentclass[11pt,a4paper]{article}
-% \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
 \usepackage{geometry}
 \usepackage{xcolor}
 \usepackage{enumitem}
 \usepackage{titlesec}
+\usepackage{needspace}
 \usepackage{hyperref}
 
-% Configuração da Página
-\geometry{top=0.4in, bottom=0.4in, left=0.5in, right=0.5in}
+% ------------------------------------------------------------------
+% Page geometry (comfortable two-page layout)
+% ------------------------------------------------------------------
+\geometry{top=0.55in, bottom=0.5in, left=0.65in, right=0.65in}
 \pagestyle{empty}
 \setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
 
-% Cores e Estilos
+% ------------------------------------------------------------------
+% Colors, links and section styling
+% ------------------------------------------------------------------
 \definecolor{primary}{RGB}{31, 73, 125}
-\titleformat{\section}{\large\bfseries\color{primary}\uppercase}{}{0pt}{}[\titlerule]
-\titlespacing{\section}{0pt}{8pt}{0.75cm} 
+\definecolor{muted}{RGB}{90, 90, 90}
+\hypersetup{colorlinks=true, urlcolor=primary, linkcolor=primary}
 
+\titleformat{\section}{\large\bfseries\color{primary}\uppercase}{}{0pt}{}[\titlerule]
+\titlespacing{\section}{0pt}{9pt}{5pt}
+
+% Company header (name + location) -- kept together with following sub-role/bullets
+\newcommand{\company}[2]{%
+  \needspace{5\baselineskip}%
+  \textbf{#1} \hfill \textcolor{muted}{#2}\\[3pt]
+}
+% Sub-role under a company (title + dates)
+\newcommand{\subrole}[2]{%
+  \needspace{4\baselineskip}%
+  \textit{#1} \hfill \textcolor{muted}{#2}\\[3pt]
+}
+% Single-line role (title + dates + location) -- kept together with its bullets
+\newcommand{\role}[4]{%
+  \needspace{5\baselineskip}%
+  \textbf{#1} \hfill \textbf{#3} \\[2pt]
+  \textit{#2} \hfill \textcolor{muted}{#4}\\[4pt]
+}
+% Project entry
+\newcommand{\project}[3]{%
+  \textbf{#1} \,\textcolor{muted}{\small[#2]} \, --- \, #3 \\[3pt]
+}
 
 \begin{document}
 
+% ------------------------------------------------------------------
 % Header
+% ------------------------------------------------------------------
 \begin{center}
-    {\Huge\bfseries Zaú Júlio} \\ [4pt]
-    \small 
-    Tech Lead | Software Engineer | Infrastructure | IA Enthusiast \\
-    \href{mailto:zaujulio.dev@gmail.com}{zaujulio.dev@gmail.com} | +55 84 99865-1868 | João Pessoa, PB \\
-    \href{https://linkedin.com/in/zaujulio}{linkedin.com/in/zaujulio} | \href{https://github.com/ZauJulio}{github.com/ZauJulio}
+    {\Huge\bfseries Za\'u J\'ulio} \\[5pt]
+    \small Tech Lead \,|\, Full Stack Software Engineer \,|\, Microservices \& System Design \,|\, AI / ML \\[4pt]
+    \footnotesize
+    \href{mailto:zaujulio.dev@gmail.com}{zaujulio.dev@gmail.com} \,|\, +55 84 99865-1868 \,|\, Jo\~ao Pessoa, PB, Brazil \\[2pt]
+    \href{https://linkedin.com/in/zaujulio}{linkedin.com/in/zaujulio} \,|\,
+    \href{https://github.com/ZauJulio}{github.com/ZauJulio} \,|\,
+    \href{https://profile.codersrank.io/user/zaujulio}{codersrank.io/@zaujulio} \,|\,
+    \href{https://zaujulio.vercel.app}{Portfolio: zaujulio.vercel.app}
 \end{center}
 
+% ------------------------------------------------------------------
 % Summary
+% ------------------------------------------------------------------
 \section{Professional Profile}
-Tech Lead and Software Engineer with extensive experience in architecting high availability solutions and high-concurrency environments. Specialist in the \textbf{TypeScript \& Node.js ecosystem}, with deep expertise in \textbf{GraphQL API design}, real-time communication via \textbf{WebSockets}, and scalable database modeling (NoSQL/SQL). Strong background in \textbf{Linux systems} and IA Research, focused on bridging the gap between complex software architecture and business efficiency through automated CI/CD pipelines and cloud infrastructure optimization.
+Tech Lead and hands-on Full Stack Software Engineer with 5+ years building scalable, high-concurrency systems across the full software development life cycle. Deep expertise in the \textbf{TypeScript / Node.js} ecosystem (\textbf{GraphQL}, Express, NestJS) and in \textbf{Python} for \textbf{AI, Machine Learning, Deep Learning, NLP and time-series} analytics. Designs event-driven \textbf{microservices} backed by job queues (BullMQ, RabbitMQ), models relational and NoSQL data (PostgreSQL, MySQL/MariaDB, MongoDB), and owns delivery end-to-end---from ER modeling and \textbf{C\# / .NET} services to CI/CD, Linux infrastructure and cloud cost optimization. Ranked \textbf{\#1 worldwide in GraphQL on CodersRank}. Started engineering before the AI wave and is now fluent at AI-augmented development, leading teams while still shipping production code daily.
 
+% ------------------------------------------------------------------
+% Technical Skills (placed early for fast recruiter / ATS scanning)
+% ------------------------------------------------------------------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=14pt, itemsep=2pt, topsep=0pt]
+    \item \textbf{Programming Languages:} TypeScript / JavaScript, Python, C\#, Java, C, Bash, SQL.
+    \item \textbf{Backend \& Microservices:} Node.js, Express, NestJS, GraphQL, .NET / .NET Core, FastAPI, Django, REST, WebSockets / Socket.io, BullMQ, RabbitMQ.
+    \item \textbf{Frontend:} React, Vite, Next.js, Redux, Tailwind CSS, Styled Components, HTML / CSS, SSR, Core Web Vitals.
+    \item \textbf{Databases:} PostgreSQL, MySQL / MariaDB, MongoDB, Redis, Data Lakes, ER modeling.
+    \item \textbf{AI / Data:} Machine Learning, Deep Learning, NLP, Time Series, Pandas, NumPy, scikit-learn, PyTorch, Matplotlib, Jupyter, R.
+    \item \textbf{Infra / DevOps:} Docker, Linux, Shell scripting, CI/CD, AWS, GCP, VPC, CDN, DevSecOps, Monitoring / Observability.
+    \item \textbf{Practices:} System design, microservices architecture, SDLC, code review, technical leadership, AI-augmented development (Claude, OpenCode).
+\end{itemize}
+
+% ------------------------------------------------------------------
 % Experience
+% ------------------------------------------------------------------
 \section{Experience}
 
-\textbf{Bitwise Technology} \hfill Aug 2025 – Present \\
-\textit{Tech Lead} \hfill Sorocaba, SP (Remote)
-\begin{itemize}[noitemsep, topsep=2pt]
-    \item Leading the engineering roadmap for high-performance applications, establishing technical standards for TypeScript-based microservices and GraphQL schemas. Orchestrating full-cycle system design: from Entity-Relationship (ER) modeling and infrastructure budgeting to production-ready deployments.
-    \item Mentoring cross-functional teams and fostering a culture of technical excellence, focusing on code quality, scalability, and system observability.
+\company{Bitwise Technology}{Sorocaba, SP (Remote)}
+\subrole{Tech Lead}{Aug 2025 -- Present}
+\begin{itemize}[leftmargin=14pt, itemsep=2pt, topsep=0pt]
+    \item Define the engineering roadmap and technical standards for TypeScript microservices and GraphQL schemas, owning system design end-to-end (ER modeling to deployment) while staying hands-on and shipping production code daily.
+    \item Cut CI/CD build times by 75\% (20 min to under 5) and reduced monthly AWS spend by \textasciitilde80\% (\$120 to \$25) through targeted infrastructure tuning. Right-sized Node.js production services from 4 to 2 cores at half the RAM with no loss in throughput, and slimmed Docker dev environments from 2 GB to 250 MB of memory.
+    \item Mentor cross-functional engineers and lead code reviews, instilling a culture of quality, scalability and observability.
+\end{itemize}
+\vspace{3pt}
+
+\subrole{Full Stack Software Engineer}{Mar 2023 -- Aug 2025}
+\begin{itemize}[leftmargin=14pt, itemsep=2pt, topsep=0pt]
+    \item Delivered high-availability backends in GraphQL, Node.js, C\#/.NET and MongoDB, modeling complex domain logic and offloading heavy processing to BullMQ and RabbitMQ job queues.
+    \item Built fast, SEO-friendly React/Vite/Next.js frontends tuned for SSR and Core Web Vitals, plus the CI/CD pipelines and cloud provisioning that shortened release cycles.
+\end{itemize}
+\vspace{3pt}
+
+\role{Commcepta}{Full Stack Developer}{Dec 2021 -- Dec 2022}{Curitiba, PR (Remote)}
+\begin{itemize}[leftmargin=14pt, itemsep=2pt, topsep=0pt]
+    \item Tuned GraphQL queries over a large-scale Data Lake, cutting search latency from \textasciitilde30s to under 6s (up to 50\% faster) and enabling near real-time analytics on Big Data.
+    \item Engineered Python pipelines that unified multiple data sources for enterprise decision-making, and hardened a multinational portal for accessibility (a11y) and internationalization (i18n).
+\end{itemize}
+\vspace{3pt}
+
+\role{Byte Serid\'o Jr -- Junior Enterprise (UFRN)}{Project Director / Front-end Developer}{Jun 2021 -- Nov 2022}{Caic\'o, RN}
+\begin{itemize}[leftmargin=14pt, itemsep=2pt, topsep=0pt]
+    \item Led the planning and delivery of multiple software projects at the university's junior enterprise, progressing from front-end developer to Project Director.
+    \item Mentored and tutored incoming developers, onboarding students on programming fundamentals, engineering best practices and project workflows.
 \end{itemize}
 
-\textbf{Bitwise Technology} \hfill Mar 2023 – Present \\
-\textit{Full Stack Developer} \hfill Sorocaba, SP (Remote)
-\begin{itemize}[noitemsep, topsep=2pt]
-    \item Engineered robust backend solutions using graphql, MongoDB, C\#/.Net and Node.js, implementing complex business logic with high availability.
-    \item Developed high-performance frontend architectures with ReactJS, Vite, NextJS, optimizing for Server-Side Rendering (SSR) and Core Web Vitals. Managed CI/CD pipelines and cloud provisioning, reducing deployment lead time and ensuring seamless infrastructure scaling.
+% ------------------------------------------------------------------
+% Research & Publication
+% ------------------------------------------------------------------
+\section{Research \& Publication}
+
+\role{LabEPI / UFRN}{AI \& Machine Learning Researcher (Scientific Initiation)}{Aug 2019 -- Sep 2020}{Caic\'o, RN}
+\begin{itemize}[leftmargin=14pt, itemsep=2pt, topsep=0pt]
+    \item Designed a hybrid classifier combining \textbf{Self-Organizing Maps (SOM)} neural networks with Polynomial Regression for unsupervised anomaly detection in minute-level energy data, improving accuracy over a pure K-Means baseline and reducing false positives.
+    \item Optimized AI model generation and reuse, cutting model memory footprint from 2 GB to \textasciitilde200 MB and SOM training time from 10--15 minutes to under 2 minutes.
+    \item Authored a peer-reviewed paper published at the Congress of Scientific and Technological Initiation (CICT); project PVF16985-2019, ``Intelligent Management of Energy Consumption'' (GERINCE).
 \end{itemize}
 
-\textbf{Commcepta} \hfill Dec 2021 – Dec 2022 \\
-\textit{Full Stack Developer} \hfill Curitiba, PR (Remote)
-\begin{itemize}[noitemsep, topsep=2pt]
-    \item Developed a large-scale Data Lake and Big Data analytical tools using GraphQL to map and query complex graph-based data structures. Implemented data processing pipelines using Python, enabling deep analysis of high-volume datasets for enterprise decision-making.
-    \item Enhanced a multinational company's portal with a focus on accessibility (A11y), internationalization (i18n), and performance tuning for global traffic.
-\end{itemize}
+% ------------------------------------------------------------------
+% Selected Open-Source Projects
+% ------------------------------------------------------------------
+\section{Selected Open-Source Projects}
 
-\textbf{Byte Seridó} \hfill Jun 2021 – Nov 2022 \\
-\textit{Project Director} \hfill Caicó, RN
-\begin{itemize}[noitemsep, topsep=2pt]
-    \item Directed the planning and execution of multiple software projects, ensuring high-quality delivery and efficient team collaboration.
-    \item Transitioned from frontend development to leadership, refining project management workflows and technical mentorship.
-\end{itemize}
+\project{FeaturesAnalyzer}{Python}{Time-series analysis and machine-learning toolkit for feature exploration, modeling and forecasting over high-volume datasets.}
+\project{ZSOM}{Python}{From-scratch implementation of the Self-Organizing Maps algorithm, powering the unsupervised models from the energy-consumption research.}
+\project{weasyprint-pdf-render}{Python, Docker}{High-performance HTML-to-PDF rendering microservice, containerized for horizontal scaling.}
+\project{linuwu-sense-dkms}{C, Shell}{DKMS kernel package for the Linuwu-Sense driver (Acer WMI Extras), demonstrating low-level Linux systems work.}
+\vspace{-3pt}
 
-% Technical Skills
-\section{Technical Skills}
-
-\begin{itemize}[noitemsep, topsep=2pt]
-    \item \textbf{Languages \& Core:} TypeScript/JavaScript, Python, C\#, Java, GraphQL, SQL, C.
-    \item \textbf{Backend \& Real-time:} Node.js, ExpressJS, Socket.io, Django, NestJS, FastAPI.
-    \item \textbf{Frontend:} ReactJS/Vite, NextJS, Redux, Styled Components, Tailwind, HTML/CSS, Webpack.
-    \item \textbf{Data/AI:} Pandas, Scikit-Learn, NumPy, Matplotlib, Jupyter, Data Lakes.
-    \item \textbf{Infrastructure/OS:} Docker, ShellScript, CI/CD, Linux, VPC, CDN, DevSecOps, Monitoring/Logging.
-\end{itemize}
-
+% ------------------------------------------------------------------
 % Education
+% ------------------------------------------------------------------
 \section{Education}
-2019/2025 - \textbf{UFRN - Federal University of Rio Grande do Norte} \hfill Bachelor's in Information Systems \\
-2018/2019 - \textbf{IMD/UFRN - Digital Metropolis Institute} \hfill Technical Degree in Computer Networks
+\textbf{UFRN -- Federal University of Rio Grande do Norte} \hfill 2019 -- 2025 \\
+B.Sc. in Information Systems --- honors thesis (TCC) graded 10/10 \\[6pt]
+\textbf{IMD/UFRN -- Digital Metropolis Institute} \hfill 2018 -- 2019 \\
+Technical Degree in Computer Networks
+
+% ------------------------------------------------------------------
+% Languages & Awards
+% ------------------------------------------------------------------
+\section{Languages \& Awards}
+\begin{itemize}[leftmargin=14pt, itemsep=2pt, topsep=0pt]
+    \item \textbf{CodersRank:} \#1 worldwide in GraphQL (currently \#2); \#1 in Jo\~ao Pessoa and Top 150 in Brazil overall.
+    \item \textbf{Awards:} 2nd place --- 1st UFRN Programming Marathon (regional campus); Research Grant PVF16985-2019 (GERINCE).
+    \item \textbf{Spoken Languages:} Portuguese (Native), English (Professional Working Proficiency), Spanish (Working Proficiency -- Listening).
+\end{itemize}
 
 \end{document}
