@@ -1,0 +1,10 @@
+# Local LaTeX engine (downloaded binary, ~55 MB) — not part of the repo
+resume/tectonic
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
