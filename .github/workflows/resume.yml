@@ -47,8 +47,8 @@ jobs:
       - name: Sync to Portfolio
         if: github.event_name == 'push'
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           # Checkout portfolio repo
           git clone https://x-access-token:${{ secrets.PORTFOLIO_DEPLOY_TOKEN }}@github.com/ZauJulio/zaujulio.github.io.git ../portfolio
