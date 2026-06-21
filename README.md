@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <a href="https://zaujulio.github.io">
+  <a href="https://zaujulio.com">
     <img src="https://img.shields.io/badge/Portfolio-249E94?style=for-the-badge&logo=react&logoColor=white" alt="Portfolio" />
   </a>
   <a href="https://linkedin.com/in/zaujulio">
