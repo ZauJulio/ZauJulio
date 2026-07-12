@@ -21,14 +21,14 @@
                         <rect x="0" y="0" width="920" height="8" fill="white" rx="5"/>
                     </mask>
                     <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                    <rect mask="url(#languages-bar)" x="0" y="0" width="434.11281520593093" height="8" fill="#ff0000"/>
-                    <rect mask="url(#languages-bar)" x="434.11281520593093" y="0" width="137.49235939512187" height="8" fill="#ffa500"/>
-                    <rect mask="url(#languages-bar)" x="571.6051746010528" y="0" width="102.36367072662577" height="8" fill="#ffff00"/>
-                    <rect mask="url(#languages-bar)" x="673.9688453276785" y="0" width="102.30806547911237" height="8" fill="#008000"/>
-                    <rect mask="url(#languages-bar)" x="776.276910806791" y="0" width="46.342413583695524" height="8" fill="#0000ff"/>
-                    <rect mask="url(#languages-bar)" x="822.6193243904866" y="0" width="42.832222006541" height="8" fill="#4b0082"/>
-                    <rect mask="url(#languages-bar)" x="865.4515463970275" y="0" width="35.49468299604451" height="8" fill="#ee82ee"/>
-                    <rect mask="url(#languages-bar)" x="900.946229393072" y="0" width="19.053770606928012" height="8" fill="#162221"/>
+                    <rect mask="url(#languages-bar)" x="0" y="0" width="434.2862773426528" height="8" fill="#ff0000"/>
+                    <rect mask="url(#languages-bar)" x="434.2862773426528" y="0" width="137.54729838242702" height="8" fill="#ffa500"/>
+                    <rect mask="url(#languages-bar)" x="571.8335757250798" y="0" width="102.34894557990707" height="8" fill="#ffff00"/>
+                    <rect mask="url(#languages-bar)" x="674.1825213049868" y="0" width="102.03696084898749" height="8" fill="#008000"/>
+                    <rect mask="url(#languages-bar)" x="776.2194821539742" y="0" width="46.3609310146478" height="8" fill="#0000ff"/>
+                    <rect mask="url(#languages-bar)" x="822.580413168622" y="0" width="42.84933684049557" height="8" fill="#4b0082"/>
+                    <rect mask="url(#languages-bar)" x="865.4297500091176" y="0" width="35.50886590735026" height="8" fill="#ee82ee"/>
+                    <rect mask="url(#languages-bar)" x="900.9386159164678" y="0" width="19.061384083532058" height="8" fill="#162221"/>
                 </svg>
                 <div class="row fill-width">
                     <section>
@@ -40,7 +40,7 @@
                                 TS
                             </div>
                             <small>
-                                <div>47.19%</div>
+                                <div>47.21%</div>
                             </small>
                         </div>
                         <div class="field language details">
@@ -64,7 +64,7 @@
                                 Python
                             </div>
                             <small>
-                                <div>14.94%</div>
+                                <div>14.95%</div>
                             </small>
                         </div>
                         <div class="field language details">
@@ -85,10 +85,10 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                     <path fill="#ffff00" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
                                 </svg>
-                                MDX
+                                Jupyter
                             </div>
                             <small>
-                                <div>11.13%</div>
+                                <div>11.12%</div>
                             </small>
                         </div>
                         <div class="field language details">
@@ -109,10 +109,10 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                     <path fill="#008000" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
                                 </svg>
-                                Jupyter
+                                MDX
                             </div>
                             <small>
-                                <div>11.12%</div>
+                                <div>11.09%</div>
                             </small>
                         </div>
                         <div class="field language details">
