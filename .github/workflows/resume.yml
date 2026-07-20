@@ -51,7 +51,7 @@ jobs:
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           # Checkout portfolio repo
-          git clone https://x-access-token:${{ secrets.PORTFOLIO_DEPLOY_TOKEN }}@github.com/ZauJulio/zaujulio.github.io.git ../portfolio
+          git clone https://x-access-token:${{ secrets.PORTFOLIO_DEPLOY_TOKEN }}@github.com/ZauJulio/portifolio.git ../portfolio
 
           # Copy both resumes to portfolio public folder
           cp resume/resume.pdf ../portfolio/apps/web/public/resume.pdf
